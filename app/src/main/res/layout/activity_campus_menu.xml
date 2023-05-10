@@ -7,43 +7,49 @@
     tools:context=".CampusMenu">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="141dp"
-        android:layout_marginTop="77dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginBottom="500dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/logoCampus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/small_logoconoceu_03" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="174dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="179dp"
-        android:layout_marginBottom="400dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/encuentraText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/encuentra"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/logoCampus"
+        app:layout_constraintStart_toStartOf="@+id/logoCampus"
+        app:layout_constraintTop_toBottomOf="@+id/logoCampus" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/campusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/campus"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/encuentraText"
+        app:layout_constraintStart_toStartOf="@+id/encuentraText"
+        app:layout_constraintTop_toBottomOf="@+id/encuentraText" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCampus"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/campusText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

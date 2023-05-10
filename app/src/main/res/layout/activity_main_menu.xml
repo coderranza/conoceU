@@ -7,72 +7,75 @@
     tools:context=".MainMenu">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logo"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="138dp"
-        android:layout_marginTop="182dp"
-        android:layout_marginEnd="145dp"
-        android:layout_marginBottom="421dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@id/escanear_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/conoceu___logo_principal" />
 
-    <Button
-        android:id="@+id/button2"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/escanear_button"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="137dp"
-        android:layout_marginEnd="166dp"
-        android:layout_marginBottom="236dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/escanear"
+        app:layout_constraintBottom_toTopOf="@id/buscar_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-    <Button
-        android:id="@+id/button3"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buscar_button"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="165dp"
-        android:layout_marginBottom="150dp"
-        android:text="Button"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/buscar"
+        app:layout_constraintBottom_toTopOf="@id/instrucciones_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/escanear_button" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/instrucciones_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/instrucciones"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toTopOf="@id/que_es_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buscar_button" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/que_es_button"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/que_es"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="166dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginBottom="33dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/instrucciones_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

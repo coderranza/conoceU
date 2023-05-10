@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ConoceU</string>
+    <string name="welcome_message">Bienvenidos</string>
+    <string name="iniciar_button">Iniciar</string>
+    <string name="escanear">Escanear codigo</string>
+    <string name="buscar">Buscar lugar</string>
+    <string name="instrucciones">Instrucciones</string>
+    <string name="que_es">Que es Conoce U?</string>
+    <string name="encuentra">Encuentra tu</string>
+    <string name="campus">Campus</string>
+    <string name="logo_name">Logo Conoce U</string>
+    <string name="scroll_campus">Scroll Campus</string>
+    <string name="titulo_botton">Titulo</string>
+    <string name="subtitulo_botton">Subtitulo</string>
 </resources>
