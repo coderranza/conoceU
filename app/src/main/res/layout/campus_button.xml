@@ -28,9 +28,10 @@
             android:paddingTop="4dp"
             android:paddingEnd="4dp"
             android:text="TextView"
-            android:textColor="@color/black_u"
+            android:textColor="@color/white"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="Ciudad Unversitaria" />
 
         <TextView
             android:id="@+id/addressCampus"
@@ -41,7 +42,8 @@
             android:paddingTop="2dp"
             android:paddingEnd="4dp"
             android:text="TextView"
-            android:textColor="@color/black_u"
-            android:textSize="16sp" />
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="Pedro de Alba S/N, Niños Héroes, Ciudad Universitaria, San Nicolás de los Garza, N.L." />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

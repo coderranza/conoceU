@@ -12,4 +12,6 @@
     <string name="scroll_campus">Scroll Campus</string>
     <string name="titulo_botton">Titulo</string>
     <string name="subtitulo_botton">Subtitulo</string>
+    <string name="schools">Escuelas</string>
+    <string name="common_areas">Areas comunes</string>
 </resources>
