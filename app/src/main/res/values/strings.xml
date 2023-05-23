@@ -16,4 +16,14 @@
     <string name="common_areas">Lugares de interes</string>
     <string name="school">Escuela</string>
     <string name="common_area">Lugar de interes</string>
+    <string name="campus_cu">Ciudad Universitaria</string>
+    <string name="campus_salud">Ciencias de la Salud</string>
+    <string name="campus_mederos">Mederos</string>
+    <string name="campus_agropecuarias">Ciencias Agropecuarias</string>
+    <string name="campus_linares">Linares</string>
+    <string name="cu_direccion">Pedro de Alba S/N, Niños Héroes, Ciudad Universitaria, San Nicolás de los Garza, N.L.</string>
+    <string name="salud_direccion">Av. Francisco I. Madero S/N, Mitras Centro, 64460 Monterrey, N.L.</string>
+    <string name="mederos_direccion">Av Lázaro Cárdenas S/n, Mederos, 64930 Monterrey, N.L.</string>
+    <string name="agropecuarias_direccion">Hacienda del Cañada, 66054 Cd Gral Escobedo, N.L.</string>
+    <string name="linares_direccion">José María Morelos 300, Centro, 67700 Linares, N.L.</string>
 </resources>

@@ -16,6 +16,8 @@ class OptionsMenu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        supportActionBar?.hide()
+
         setContentView(R.layout.activity_options_menu)
 
         setupAdapter()
@@ -25,6 +27,9 @@ class OptionsMenu : AppCompatActivity() {
     {
         val recycler = findViewById<RecyclerView>(R.id.recyclerCampus)
         recycler.layoutManager = LinearLayoutManager(this)
+
+
+
         recycler.adapter = RecyclerSchool(this, listSchool)
     }
 }

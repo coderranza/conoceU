@@ -1,6 +1,6 @@
 package com.bcarranza.conoceu
 
 data class Campus(
-    var name:String,
-    var address:String
+    var name: Int,
+    var address: Int
     )

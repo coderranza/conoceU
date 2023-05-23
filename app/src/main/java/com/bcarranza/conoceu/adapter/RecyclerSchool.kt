@@ -10,12 +10,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bcarranza.conoceu.R
 import com.bcarranza.conoceu.School
 
-class RecyclerSchool(var context: Context, var schoolList:MutableList<School>):RecyclerView.Adapter<RecyclerSchool.MyHolder>() {
+class RecyclerSchool(private var context: Context, private var schoolList:MutableList<School>):RecyclerView.Adapter<RecyclerSchool.MyHolder>() {
 
     inner class MyHolder(itemView: View):RecyclerView.ViewHolder(itemView)
     {
-        lateinit var labelSchoolName: TextView
-        lateinit var imageSchool: ImageView
+        var labelSchoolName: TextView
+        var imageSchool: ImageView
 
         init {
             labelSchoolName = itemView.findViewById(R.id.textSchool)
@@ -30,8 +30,8 @@ class RecyclerSchool(var context: Context, var schoolList:MutableList<School>):R
 
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
         var school = schoolList[position]
-        holder.labelSchoolName.text = school.name
-        holder.imageSchool.setImageResource(school.imageId as Int)
+        holder.labelSchoolName.text = context.getString(school.name)
+        holder.imageSchool.setImageResource(school.imageId)
     }
 
     override fun getItemCount(): Int {

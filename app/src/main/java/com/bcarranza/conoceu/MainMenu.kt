@@ -10,6 +10,8 @@ class MainMenu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
 
+        supportActionBar?.hide()
+
         val btnFindPlace = findViewById<Button>(R.id.findButton)
 
         btnFindPlace?.setOnClickListener()

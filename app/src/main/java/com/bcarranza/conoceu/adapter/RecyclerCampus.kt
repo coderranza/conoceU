@@ -9,12 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bcarranza.conoceu.Campus
 import com.bcarranza.conoceu.R
 
-class RecyclerCampus(var context: Context, var campusList:MutableList<Campus>):RecyclerView.Adapter<RecyclerCampus.MyHolder>() {
+class RecyclerCampus(private var context: Context, private var campusList:MutableList<Campus>):RecyclerView.Adapter<RecyclerCampus.MyHolder>() {
 
     inner class MyHolder(itemView: View):RecyclerView.ViewHolder(itemView)
     {
-        lateinit var labelCampusName: TextView
-        lateinit var labelCampusAddress: TextView
+        var labelCampusName: TextView
+        var labelCampusAddress: TextView
 
         init
         {
@@ -24,14 +24,14 @@ class RecyclerCampus(var context: Context, var campusList:MutableList<Campus>):R
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder {
-        var itemView = LayoutInflater.from(context).inflate(R.layout.campus_button, parent, false)
+        val itemView = LayoutInflater.from(context).inflate(R.layout.campus_button, parent, false)
         return MyHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
-        var campus = campusList[position]
-        holder.labelCampusName.text = campus.name
-        holder.labelCampusAddress.text = campus.address
+        val campus = campusList[position]
+        holder.labelCampusName.text = context.getString(campus.name)
+        holder.labelCampusAddress.text = context.getString(campus.address)
     }
 
     override fun getItemCount(): Int {

@@ -16,6 +16,8 @@ class CampusMenu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        supportActionBar?.hide()
+
         //binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_campus_menu)
 
@@ -27,7 +29,13 @@ class CampusMenu : AppCompatActivity() {
     {
         val recycler = findViewById<RecyclerView>(R.id.recyclerCampus)
         recycler.layoutManager = LinearLayoutManager(this)
-        recycler.adapter = RecyclerCampus(this, listCampus)
 
+        listCampus.add(Campus(R.string.campus_cu, R.string.cu_direccion))
+        listCampus.add(Campus(R.string.campus_salud , R.string.salud_direccion))
+        listCampus.add(Campus(R.string.campus_mederos , R.string.mederos_direccion))
+        listCampus.add(Campus(R.string.campus_agropecuarias , R.string.agropecuarias_direccion))
+        listCampus.add(Campus(R.string.campus_linares , R.string.linares_direccion))
+
+        recycler.adapter = RecyclerCampus(this, listCampus)
     }
 }
