@@ -2,6 +2,10 @@
 
 ## Features
 
+## Wireframes
+
+## UI Design
+
 ## Screenshots
 
 ## Requirements
