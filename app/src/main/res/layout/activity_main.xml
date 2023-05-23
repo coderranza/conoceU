@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/encuentra_text"
+        android:id="@+id/welcomeText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -15,15 +15,15 @@
         android:layout_marginEnd="200dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/welcome_message"
-        android:textColor="@color/black_u"
+        android:textColor="@color/blue"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/logoView"
+        app:layout_constraintBottom_toTopOf="@+id/logoMain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/logoView"
+        android:id="@+id/logoMain"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="50dp"
@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toTopOf="@id/startButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/encuentra_text"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
         tools:srcCompat="@drawable/conoceu___logo_principal" />
 
     <com.google.android.material.button.MaterialButton
@@ -48,5 +48,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoView" />
+        app:layout_constraintTop_toBottomOf="@+id/logoMain" />
 </androidx.constraintlayout.widget.ConstraintLayout>

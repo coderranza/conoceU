@@ -7,42 +7,50 @@
     tools:context=".OptionsMenu">
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="141dp"
+        android:id="@+id/logoCampus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="571dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/logo_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/small_logoconoceu_03" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="181dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginBottom="511dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        android:id="@+id/encuentraText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/encuentra"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/logoCampus"
+        app:layout_constraintStart_toStartOf="@+id/logoCampus"
+        app:layout_constraintTop_toBottomOf="@+id/logoCampus" />
+
+    <TextView
+        android:id="@+id/campusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/encuentraText"
+        app:layout_constraintStart_toStartOf="@+id/encuentraText"
+        app:layout_constraintTop_toBottomOf="@+id/encuentraText"
+        tools:text="Escuela" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCampus"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/campusText" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
