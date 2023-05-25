@@ -3,9 +3,9 @@
 ## Features
 
 ## Wireframes
-| ![Home](wireframes/Home-conoceu.jpg)          | ![Main Menu](wireframes/MainMenu-conoceu.jpg)     | ![Find a Place](wireframes/FindAPlace-conoceu.jpg)          | ![Campus](wireframes/Campus-conoceu.jpg)             |
+| ![Home](wireframes/Home-conoceu.jpg)          | ![Main Menu](wireframes/MainMenu-conoceu.png)     | ![Find a Place](wireframes/FindAPlace-conoceu.png)          | ![Campus](wireframes/Campus-conoceu.png)             |
 |-----------------------------------------------|---------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------|
-| ![Schools](wireframes/Facultades-conoceu.jpg) | ![Places](wireframes/Administrativos-conoceu.jpg) | ![What is Conoce U](wireframes/What is ConoceU-conoceu.jpg) | ![Instructions](wireframes/Instructions-conoceu.jpg) |
+| ![Schools](wireframes/Facultades-conoceu.png) | ![Places](wireframes/Administrativos-conoceu.png) | ![What is Conoce U](wireframes/What is ConoceU-conoceu.png) | ![Instructions](wireframes/Instructions-conoceu.png) |
 
 
 ## UI Design
