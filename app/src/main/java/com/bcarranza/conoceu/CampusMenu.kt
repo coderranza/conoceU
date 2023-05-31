@@ -7,11 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bcarranza.conoceu.adapter.RecyclerCampus
 import com.bcarranza.conoceu.databinding.ActivityMainBinding
 
-class CampusMenu : AppCompatActivity() {
+class CampusMenu : AppCompatActivity(){
 
     private lateinit var binding:ActivityMainBinding
-    private var listCampus:MutableList<Campus> = mutableListOf()
-    private lateinit var recycler:RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,20 +20,12 @@ class CampusMenu : AppCompatActivity() {
         setContentView(R.layout.activity_campus_menu)
 
         setupAdapter()
-
     }
 
     private fun setupAdapter()
     {
         val recycler = findViewById<RecyclerView>(R.id.recyclerCampus)
         recycler.layoutManager = LinearLayoutManager(this)
-
-        listCampus.add(Campus(R.string.campus_cu, R.string.cu_direccion))
-        listCampus.add(Campus(R.string.campus_salud , R.string.salud_direccion))
-        listCampus.add(Campus(R.string.campus_mederos , R.string.mederos_direccion))
-        listCampus.add(Campus(R.string.campus_agropecuarias , R.string.agropecuarias_direccion))
-        listCampus.add(Campus(R.string.campus_linares , R.string.linares_direccion))
-
-        recycler.adapter = RecyclerCampus(this, listCampus)
+        recycler.adapter = RecyclerCampus(this, CampusProvider.campusList)
     }
 }
