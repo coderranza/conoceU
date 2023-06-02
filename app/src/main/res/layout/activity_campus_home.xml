@@ -35,24 +35,30 @@
     <Button
         android:id="@+id/btnSchool"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
+        app:cornerRadius="32dp"
         android:layout_marginTop="128dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
         android:backgroundTint="@color/accent_color"
         android:text="@string/schools"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/tvCampusTitle"
-        app:layout_constraintStart_toStartOf="@+id/tvCampusTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCampusTitle" />
 
     <Button
         android:id="@+id/btnPlaces"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_height="80dp"
+        app:cornerRadius="32dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/accent_color"
         android:text="@string/common_areas"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/btnSchool"
-        app:layout_constraintStart_toStartOf="@+id/btnSchool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSchool" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -43,4 +43,27 @@
     <string name="fcb_school">Facultad de Ciencias Biologicas</string>
     <string name="fcq_school">Facultad de Ciencias Quimicas</string>
     <string name="fcfm_school">Facultad de Ciencias Fisico Matematicas</string>
+
+    <!-- PLACES -->
+    <string name="medicalserivces_place">Servicios medicos</string>
+    <string name="ctycd_place">Centro de Transparencia y Comunicacion Digital</string>
+    <string name="bookstore_place">Libreria Universitaria</string>
+    <string name="library_place">Biblioteca Capilla Alfonsina</string>
+    <string name="schoolarship_place">Departamento de Becas</string>
+    <string name="dti_place">Direccion de Tecnologias de Informacion</string>
+    <string name="deya_place">Departamento Escolar y de Archivo</string>
+    <string name="rectoria_place">Rectoria</string>
+    <string name="cedye_place">Centro de Educacion Digital y Emprendimiento</string>
+    <string name="ci_place">Centro de Internacionalizacion</string>
+    <string name="libraryuniversity_place">Biblioteca Universitaria "Raul Rangel Frias"</string>
+    <string name="cae_place">Centro de Atencion Estudiantil</string>
+    <string name="drh_place">Direccion de Recursos Humanos - Centro de Capacitacion y Adiestramiento</string>
+    <string name="caou_place">Centro Acuatico Olimpico Universitario</string>
+    <string name="dgp_place">Direccion General de Deportes</string>
+    <string name="dgdsayn_place">Direccion General de Deportes - Servicio de Alimentacion y Nutricion</string>
+    <string name="gasparmass_place">Estadio Gaspar Mass</string>
+    <string name="chicorivera_place">Estadio Ing. Raymundo "Chico" Rivera</string>
+    <string name="park_place">Parque Hundido</string>
+    <string name="print_place">Imprenta Universitaria</string>
+    <string name="stadium_place">Estadio Universitario</string>
 </resources>

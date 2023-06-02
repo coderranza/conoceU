@@ -9,28 +9,26 @@
     <ImageView
         android:id="@+id/logoMenu"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="250dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toTopOf="@id/scanButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/conoceu___logo_principal"
-        tools:srcCompat="@drawable/conoceu___logo_principal" />
+        app:srcCompat="@drawable/conoceu___logo_principal" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/scanButton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="100dp"
         android:backgroundTint="@color/accent_color"
         android:text="@string/escanear"
-        app:layout_constraintBottom_toTopOf="@id/findButton"
+        app:cornerRadius="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,44 +37,51 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/findButton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/accent_color"
+        app:cornerRadius="32dp"
         android:text="@string/buscar"
-        app:layout_constraintBottom_toTopOf="@id/instructionButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scanButton" />
 
-    <com.google.android.material.textview.MaterialTextView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/instructionButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="8dp"
         android:text="@string/instrucciones"
         android:textAlignment="center"
+        android:textStyle="bold"
         android:textColor="@color/secondary_text"
-        app:layout_constraintBottom_toTopOf="@id/whatIsButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/findButton" />
+        app:layout_constraintTop_toBottomOf="@+id/findButton"
+        android:background="@android:color/transparent"
+        android:foreground="?android:attr/selectableItemBackground"/>
 
-    <com.google.android.material.textview.MaterialTextView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/whatIsButton"
         android:layout_width="0dp"
-        android:layout_height="19dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="80dp"
         android:text="@string/que_es"
+        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/secondary_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instructionButton" />
+        app:layout_constraintTop_toBottomOf="@+id/instructionButton"
+        android:background="@android:color/transparent"
+        android:foreground="?android:attr/selectableItemBackground"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,18 +15,6 @@ class MainMenu : AppCompatActivity() {
 
         val btnFindPlace = findViewById<Button>(R.id.findButton)
 
-        btnFindPlace.setOnTouchListener { view, event ->
-            when (event.action) {
-                MotionEvent.ACTION_DOWN -> {
-                    btnFindPlace.setBackgroundResource(R.color.primary_color)
-                }
-                MotionEvent.ACTION_UP -> {
-                    btnFindPlace.setBackgroundResource(R.color.accent_color)
-                }
-            }
-            false
-        }
-
         btnFindPlace?.setOnClickListener()
         {
             val intent = Intent(this, CampusMenu::class.java)

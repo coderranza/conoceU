@@ -11,6 +11,7 @@ class OptionsMenu : AppCompatActivity() {
 
     private var listPlace: MutableList<Place> = mutableListOf()
     private lateinit var recycler: RecyclerView
+    private var isSchool: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +20,8 @@ class OptionsMenu : AppCompatActivity() {
         supportActionBar?.hide()
 
         // Get the value from the intent
-        val title = intent.getStringExtra("title")
+        val title: String? = intent.getStringExtra("title")
+        isSchool = intent.getBooleanExtra("list", true)
 
         val tvPlace = findViewById<TextView>(R.id.campusText)
 
@@ -32,6 +34,14 @@ class OptionsMenu : AppCompatActivity() {
     private fun setupAdapter() {
         val recycler = findViewById<RecyclerView>(R.id.recyclerCampus)
         recycler.layoutManager = LinearLayoutManager(this)
-        recycler.adapter = RecyclerPlace(this, PlaceProvider.schoolList)
+
+        if(isSchool)
+        {
+            recycler.adapter = RecyclerPlace(this, PlaceProvider.schoolList)
+        }
+        else
+        {
+            recycler.adapter = RecyclerPlace(this, PlaceProvider.placeList)
+        }
     }
 }
