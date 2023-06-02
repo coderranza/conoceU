@@ -16,14 +16,31 @@
     <string name="common_areas">Lugares de interes</string>
     <string name="school">Escuela</string>
     <string name="common_area">Lugar de interes</string>
+
+    <!-- CAMPUS -->
     <string name="campus_cu">Ciudad Universitaria</string>
     <string name="campus_salud">Ciencias de la Salud</string>
     <string name="campus_mederos">Mederos</string>
     <string name="campus_agropecuarias">Ciencias Agropecuarias</string>
     <string name="campus_linares">Linares</string>
+
+    <!-- ADDRESS -->
     <string name="cu_direccion">Pedro de Alba S/N, Niños Héroes, Ciudad Universitaria, San Nicolás de los Garza, N.L.</string>
     <string name="salud_direccion">Av. Francisco I. Madero S/N, Mitras Centro, 64460 Monterrey, N.L.</string>
     <string name="mederos_direccion">Av Lázaro Cárdenas S/n, Mederos, 64930 Monterrey, N.L.</string>
     <string name="agropecuarias_direccion">Hacienda del Cañada, 66054 Cd Gral Escobedo, N.L.</string>
     <string name="linares_direccion">José María Morelos 300, Centro, 67700 Linares, N.L.</string>
+
+    <!-- SCHOOLS -->
+    <string name="fic_school">Facultad de Ingenieria Civil</string>
+    <string name="fime_school">Facultad de Ingenieria Mecanica y Electrica</string>
+    <string name="farq_school">Facultad de Arquitectura</string>
+    <string name="facdyc_school">Facultad de Derecho y Criminologia</string>
+    <string name="ffyl_school">Facultad de Filosofia y Letras</string>
+    <string name="facpya_school">Facultad de Contaduria Publica</string>
+    <string name="ftsydh_school">Facultad de Trabajo Social y Desarrollo Humano</string>
+    <string name="fod_school">Facultad de Organizacion Deportiva</string>
+    <string name="fcb_school">Facultad de Ciencias Biologicas</string>
+    <string name="fcq_school">Facultad de Ciencias Quimicas</string>
+    <string name="fcfm_school">Facultad de Ciencias Fisico Matematicas</string>
 </resources>

@@ -5,11 +5,9 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bcarranza.conoceu.adapter.RecyclerCampus
-import com.bcarranza.conoceu.databinding.ActivityMainBinding
 
 class CampusMenu : AppCompatActivity(){
 
-    private lateinit var binding:ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

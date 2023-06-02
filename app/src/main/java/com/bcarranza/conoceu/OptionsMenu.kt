@@ -2,34 +2,36 @@ package com.bcarranza.conoceu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.bcarranza.conoceu.adapter.RecyclerSchool
-import com.bcarranza.conoceu.databinding.ActivityMainBinding
+import com.bcarranza.conoceu.adapter.RecyclerPlace
 
 class OptionsMenu : AppCompatActivity() {
 
-    private lateinit var binding:ActivityMainBinding
-    private var listSchool:MutableList<School> = mutableListOf()
-    private lateinit var recycler:RecyclerView
+    private var listPlace: MutableList<Place> = mutableListOf()
+    private lateinit var recycler: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_options_menu)
 
         supportActionBar?.hide()
 
-        setContentView(R.layout.activity_options_menu)
+        // Get the value from the intent
+        val title = intent.getStringExtra("title")
+
+        val tvPlace = findViewById<TextView>(R.id.campusText)
+
+        // Assign value
+        tvPlace.text = title
 
         setupAdapter()
     }
 
-    private fun setupAdapter()
-    {
+    private fun setupAdapter() {
         val recycler = findViewById<RecyclerView>(R.id.recyclerCampus)
         recycler.layoutManager = LinearLayoutManager(this)
-
-
-
-        recycler.adapter = RecyclerSchool(this, listSchool)
+        recycler.adapter = RecyclerPlace(this, PlaceProvider.schoolList)
     }
 }

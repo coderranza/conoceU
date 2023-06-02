@@ -8,18 +8,18 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bcarranza.conoceu.R
-import com.bcarranza.conoceu.School
+import com.bcarranza.conoceu.Place
 
-class RecyclerSchool(private var context: Context, private var schoolList:MutableList<School>):RecyclerView.Adapter<RecyclerSchool.MyHolder>() {
+class RecyclerPlace(private var context: Context, private var placeList:List<Place>):RecyclerView.Adapter<RecyclerPlace.MyHolder>() {
 
     inner class MyHolder(itemView: View):RecyclerView.ViewHolder(itemView)
     {
-        var labelSchoolName: TextView
-        var imageSchool: ImageView
+        var labelPlaceName: TextView
+        var imagePlace: ImageView
 
         init {
-            labelSchoolName = itemView.findViewById(R.id.textSchool)
-            imageSchool = itemView.findViewById(R.id.imageSchool)
+            labelPlaceName = itemView.findViewById(R.id.textSchool)
+            imagePlace = itemView.findViewById(R.id.imageSchool)
         }
     }
 
@@ -29,12 +29,12 @@ class RecyclerSchool(private var context: Context, private var schoolList:Mutabl
     }
 
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
-        var school = schoolList[position]
-        holder.labelSchoolName.text = context.getString(school.name)
-        holder.imageSchool.setImageResource(school.imageId)
+        var school = placeList[position]
+        holder.labelPlaceName.text = context.getString(school.name)
+        holder.imagePlace.setImageResource(school.imageId)
     }
 
     override fun getItemCount(): Int {
-        return schoolList.size
+        return placeList.size
     }
 }
