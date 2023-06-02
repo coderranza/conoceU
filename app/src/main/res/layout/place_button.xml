@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:backgroundTint="@color/yellow"
+    android:backgroundTint="@color/primary_color"
     app:cardCornerRadius="12dp">
 
     <LinearLayout
@@ -38,7 +38,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/poppins_medium"
             android:text="TextView"
-            android:textColor="@color/white_u"
+            android:textColor="@color/white_color"
             android:textSize="20sp"
             tools:text="FIME" />
     </LinearLayout>
