@@ -4,11 +4,7 @@
     android:id="@+id/campusCard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="4dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginBottom="4dp"
+    android:layout_margin="4dp"
     android:backgroundTint="@color/primary_color"
     app:cardCornerRadius="16dp">
 
@@ -42,7 +38,7 @@
             android:paddingTop="2dp"
             android:paddingEnd="4dp"
             android:text="TextView"
-            android:textColor="@color/white"
+            android:textColor="@color/secondary_text"
             android:textSize="16sp"
             tools:text="Pedro de Alba S/N, Niños Héroes, Ciudad Universitaria, San Nicolás de los Garza, N.L." />
     </LinearLayout>

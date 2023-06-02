@@ -26,10 +26,8 @@ class CampusHome : AppCompatActivity() {
         btnSchool?.setOnClickListener()
         {
             val intent = Intent(this, OptionsMenu::class.java)
-
             // Send values as parameter
             intent.putExtra("title", "Facultad")
-
             startActivity(intent)
         }
     }
