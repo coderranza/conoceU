@@ -8,6 +8,8 @@ import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bcarranza.conoceu.Campus
 import com.bcarranza.conoceu.CampusHome
@@ -19,11 +21,13 @@ class RecyclerCampus(private var context: Context, private var campusList:List<C
     {
         var labelCampusName: TextView
         var labelCampusAddress: TextView
+        var cardCampus: CardView
 
         init
         {
             labelCampusName = itemView.findViewById(R.id.nameCampus)
             labelCampusAddress = itemView.findViewById(R.id.addressCampus)
+            cardCampus = itemView.findViewById(R.id.campusCard)
 
             itemView.setOnClickListener {
                 val position = adapterPosition
@@ -52,6 +56,15 @@ class RecyclerCampus(private var context: Context, private var campusList:List<C
         val campus = campusList[position]
         holder.labelCampusName.text = context.getString(campus.name)
         holder.labelCampusAddress.text = context.getString(campus.address)
+
+        if(campus.isActive) {
+            holder.cardCampus.isEnabled = true
+            holder.cardCampus.setCardBackgroundColor(ContextCompat.getColor(context, R.color.primary_color))
+        }
+        else {
+            holder.cardCampus.isEnabled = false
+            holder.cardCampus.setCardBackgroundColor(ContextCompat.getColor(context, R.color.divider_color))
+        }
     }
 
     override fun getItemCount(): Int {
