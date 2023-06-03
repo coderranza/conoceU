@@ -49,7 +49,7 @@ class RecyclerCampus(private var context: Context, private var campusList:List<C
                     }
                     else
                     {
-                        Toast.makeText(context,"Campus no disponible aun", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context,"Campus aun no disponible", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
