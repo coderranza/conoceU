@@ -13,6 +13,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bcarranza.conoceu.Campus
 import com.bcarranza.conoceu.CampusHome
+import com.bcarranza.conoceu.CampusProvider.Companion.campusList
 import com.bcarranza.conoceu.R
 
 class RecyclerCampus(private var context: Context, private var campusList:List<Campus>):RecyclerView.Adapter<RecyclerCampus.MyHolder>(){
@@ -34,14 +35,22 @@ class RecyclerCampus(private var context: Context, private var campusList:List<C
                 if (position != RecyclerView.NO_POSITION) {
                     val campus = campusList[position]
 
-                    // Create intent to new activity
-                    val intent = Intent(context, CampusHome::class.java)
+                    if(campus.isActive)
+                    {
+                        // Create intent to new activity
+                        val intent = Intent(context, CampusHome::class.java)
 
-                    // Send values as parameter
-                    intent.putExtra("name", context.getString(campus.name))
+                        // Send values as parameter
+                        intent.putExtra("name", context.getString(campus.name))
 
-                    // Start new activity
-                    context.startActivity(intent)
+                        // Start new activity
+                        context.startActivity(intent)
+
+                    }
+                    else
+                    {
+                        Toast.makeText(context,"Campus no disponible aun", Toast.LENGTH_SHORT).show()
+                    }
                 }
             }
         }
@@ -62,7 +71,7 @@ class RecyclerCampus(private var context: Context, private var campusList:List<C
             holder.cardCampus.setCardBackgroundColor(ContextCompat.getColor(context, R.color.primary_color))
         }
         else {
-            holder.cardCampus.isEnabled = false
+            // holder.cardCampus.isEnabled = false
             holder.cardCampus.setCardBackgroundColor(ContextCompat.getColor(context, R.color.divider_color))
         }
     }
