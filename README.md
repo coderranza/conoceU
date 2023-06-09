@@ -6,15 +6,15 @@ Conoce U is an application where UANL students will be able to see information a
 ## Features
 
 ## Wireframes
-| ![Home](wireframes/Home-conoceu.jpg)          | ![Main Menu](wireframes/MainMenu-conoceu.png)     | ![Find a Place](wireframes/FindCampus-conoceu.png) | ![Campus](wireframes/Campus-conoceu.png)             |
+| ![Home](wireframes/Home-conoceu.jpg)          | ![Main Menu](wireframes/MainMenu-conoceu.png)     | ![Find a Place](wireframes/FindAPlace-conoceu.png) | ![Campus](wireframes/Campus-conoceu.png)             |
 |-----------------------------------------------|---------------------------------------------------|----------------------------------------------------|------------------------------------------------------|
 | ![Schools](wireframes/Facultades-conoceu.png) | ![Places](wireframes/Administrativos-conoceu.png) | ![What is Conoce U](wireframes/WhatIs-conoceu.png) | ![Instructions](wireframes/Instructions-conoceu.png) |
 
 
 ## UI Design
-| ![Home](mockups/Home-conoceu.jpg)             | ![Main Menu](mockups/MainMenu-conoceu.png)        | ![Find a Place](mockups/FindAPlace-conoceu.png)    | ![Campus](mockups/CampusHub-conoceu.png)             |
+| ![Home](mockups/Home_conoceu.png)             | ![Main Menu](mockups/MainMenu_conoceu.png)        | ![Find a Place](mockups/FindAPlace_conoceu.png)    | ![Campus](mockups/CampusHub_conoceu.png)             |
 |-----------------------------------------------|---------------------------------------------------|--------------------------------------------a--------|------------------------------------------------------|
-| ![Schools](mockups/FindSchool-conoceu.png) | ![Places](mockups/FindAPlace-conoceu.png) | ![What is Conoce U](mockups/WhatIs-conoceu.png) | ![Instructions](mockups/Instructions-conoceu.png) |
+| ![Schools](mockups/FindSchool_conoceu.png) | ![Places](mockups/FindAPlace_conoceu.png) | ![What is Conoce U](mockups/WhatIs_conoceu.png) | ![Instructions](mockups/Instructions_conoceu.png) |
 ## Screenshots
 
 ## Requirements
